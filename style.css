@@ -452,6 +452,23 @@ footer {
 
 @media (max-width: 768px) {
     /* Styles for screens 768px or smaller */
+    .nav-links {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: white;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0;
+  display: none;
+  z-index: 999;
+}
+
+.nav-links.active {
+  display: flex;
+}
 }
 
 /* ==================== RESPONSIVE DESIGN ==================== */
@@ -657,3 +674,4 @@ body.dark-mode #navbar {
         max-height: 500px;
     }
 }
+
